@@ -10,7 +10,7 @@
 <body>
 <h3> Lista de Cuentas </h3>
 
-
+<a href="cuentas/nuevo">Nueva Cuenta</a>
 <table class='table table-striped' >
    <tr>
        <th>Id</th>
@@ -27,9 +27,12 @@
         <td>{{$cuenta->id}}</td> 
         <td>{{$cuenta->nombre}}</td> 
         <td>{{$cuenta->correo}}</td> 
-        <td> <a href="empleados/detalle/{{$cuenta->id}}">Detalle</a></td> 
-        <td> <a href="empleados/editar/{{$cuenta->id}}">Editar</a></td> 
-        <td> <a href="empleados/eliminar/{{$cuenta->id}}">Eliminar</a></td> 
+        <td> <a href="cuentas/detalle/{{$cuenta->id}}">Detalle</a></td> 
+        <td> <a href="cuentas/editar/{{$cuenta->id}}">Editar</a></td> 
+        <td> <a href="cuentas/eliminar/{{$cuenta->id}}">Eliminar</a></td> 
+        <td> <a href="movimientos/retiro/{{$cuenta->id}}">Retirar</a></td> 
+        <td> <a href="movimientos/depositos/{{$cuenta->id}}">Depositar</a></td> 
+
         
                                    
       </tr>
